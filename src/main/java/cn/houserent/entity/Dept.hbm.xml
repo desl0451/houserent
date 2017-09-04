@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.houserent.entity.Dept" table="Dept">
+        <id name="deptNo" type="java.lang.Integer" column="DEPTNO">
+            <generator class="assigned"/>
+        </id>
+        <property name="deptName" type="java.lang.String" column="DNAME"/>
+        <property name="location" type="java.lang.String" column="loc"/>
+    </class>
+</hibernate-mapping>
+
